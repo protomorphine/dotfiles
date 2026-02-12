@@ -87,7 +87,7 @@ alias .5='cd ../../../../..'
 alias mkdir='mkdir -p'
 
 export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$HOME/.local/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$PATH
+export PATH=$HOME/.local/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$HOME/go/bin:$PATH
 export MSBUILDTERMINALLOGGER=on
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
