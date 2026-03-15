@@ -48,28 +48,19 @@ esac
 
 
 #// scale font size
-
 export fntSize=$(( y_mon * 2 / 100 ))
 
-
-#// detect wallpaper brightness
-
-[ -f "${cacheDir}/wall.dcol" ] && source "${cacheDir}/wall.dcol"
-[ "${dcol_mode}" == "dark" ] && export BtnCol="white" || export BtnCol="black"
-
+export BtnCol="white"
 
 #// eval hypr border radius
-
 export active_rad=$(( hypr_border * 5 ))
 export button_rad=$(( hypr_border * 8 ))
 
 
 #// eval config files
-
 wlStyle="$(envsubst < $wlTmplt)"
 
 
 #// launch wlogout
-
 wlogout -b "${wlColms}" -c 0 -r 0 -m 0 --layout "${wLayout}" --css <(echo "${wlStyle}") --protocol layer-shell
 
