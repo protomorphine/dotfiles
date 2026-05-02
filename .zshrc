@@ -2,7 +2,7 @@
 ZSH=/usr/share/oh-my-zsh/
 
 # Powerlevel10k theme path
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
 plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting )
@@ -91,7 +91,9 @@ export PATH=$HOME/.local/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$HOME/go/bin:$HOME
 export MSBUILDTERMINALLOGGER=on
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"
 
 # Display Pokemon
 pokemon-colorscripts --no-title -r 1,3,6
