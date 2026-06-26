@@ -1,9 +1,17 @@
 # dotfiles
 
-## setup
+## setup 1
 
 - DE                  : Hyprland
 - top panel           : waybar
+- shell               : zsh
+- terminal emulator   : kitty
+- menus               : rofi
+
+## setup 2
+
+- DE                  : i3wm
+- top panel           : polybar
 - shell               : zsh
 - terminal emulator   : kitty
 - menus               : rofi

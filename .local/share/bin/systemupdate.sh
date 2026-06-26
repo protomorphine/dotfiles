@@ -47,7 +47,8 @@ upd=$(( ofc + aur + fpk ))
 if [ $upd -eq 0 ] ; then
     upd="" #Remove Icon completely
     # upd="󰮯"   #If zero Display Icon only
-    echo "{\"text\":\"$upd\", \"tooltip\":\" Packages are up to date\"}"
+    # echo "{\"text\":\"$upd\", \"tooltip\":\" Packages are up to date\"}"
 else
-    echo "{\"text\":\"󰮯 $upd\", \"tooltip\":\"󱓽 Official $ofc\n󱓾 AUR $aur$fpk_disp\"}"
+    # echo "{\"text\":\"󰮯 $upd\", \"tooltip\":\"󱓽 Official $ofc\n󱓾 AUR $aur$fpk_disp\"}"
+    echo "󰮯 $upd"
 fi
