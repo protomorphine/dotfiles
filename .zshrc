@@ -84,7 +84,7 @@ alias .5='cd ../../../../..'
 alias mkdir='mkdir -p'
 
 export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$HOME/.local/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.npm/bin:$PATH
+export PATH=$HOME/.local/share/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.npm/bin:$PATH
 export MSBUILDTERMINALLOGGER=on
 
 eval "$(starship init zsh)"
