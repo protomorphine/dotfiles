@@ -1,16 +1,8 @@
 # dotfiles
 
-## setup 1
+## setup
 
-- DE                  : Hyprland
-- top panel           : waybar
-- shell               : zsh
-- terminal emulator   : kitty
-- menus               : rofi
-
-## setup 2
-
-- DE                  : i3wm
+- DE                  : i3
 - top panel           : polybar
 - shell               : zsh
 - terminal emulator   : kitty
@@ -34,10 +26,7 @@
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [zsh-256color](https://github.com/chrissicool/zsh-256color)
-
-### waybar
-
-- [wlogout](https://github.com/ArtsyMacaw/wlogout)
+- [starship](https://github.com/starship/starship)
 
 ### additional
 

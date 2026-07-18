@@ -1,9 +1,5 @@
 # Oh-my-zsh installation path
-# ZSH=/usr/share/oh-my-zsh/
 ZSH=/home/dzaytsev/.oh-my-zsh
-
-# Powerlevel10k theme path
-# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
 plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting )
@@ -91,10 +87,13 @@ export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$HOME/.local/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.npm/bin:$PATH
 export MSBUILDTERMINALLOGGER=on
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 eval "$(starship init zsh)"
 
 # Display Pokemon
 pokemon-colorscripts --no-title -r 1,3,6
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<
