@@ -83,6 +83,8 @@ alias .5='cd ../../../../..'
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 
+alias fzf='fzf --style full --preview "fzf-preview.sh {}" --bind "focus:transform-header:file --brief {}"'
+
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$HOME/.local/share/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.npm/bin:$PATH
 export MSBUILDTERMINALLOGGER=on
@@ -97,3 +99,8 @@ export PATH="$HOME/.grok/bin:$PATH"
 fpath=(~/.grok/completions/zsh $fpath)
 autoload -Uz compinit && compinit -C
 # <<< grok installer <<<
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+# Open in a popup if on tmux or Zellij, otherwise use --height mode
+export FZF_DEFAULT_OPTS='--height 40% --popup bottom,40% --layout reverse --border top'
