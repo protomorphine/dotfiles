@@ -87,6 +87,7 @@ alias fzf='fzf --style full --preview "fzf-preview.sh {}" --bind "focus:transfor
 
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$HOME/.local/share/bin:$DOTNET_ROOT:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.npm/bin:$PATH
+export PATH=/home/dzaytsev/bin:$PATH
 export MSBUILDTERMINALLOGGER=on
 
 eval "$(starship init zsh)"
