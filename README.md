@@ -1,5 +1,7 @@
 # dotfiles
 
+![screenshot](assets/screen.png)
+
 ## setup
 
 - DE                  : i3
